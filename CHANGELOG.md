@@ -2,6 +2,24 @@
 
 All notable changes to the **MagELLA** project will be documented in this file.
 
+## [1.1.0] - 2026-02-08
+
+### Added
+- **Mobile Responsiveness**: Complete support for Magazine flipbook on all devices.
+- **Mobile Spread View**: Implemented "Scaled Spread" logic to maintain double-page layout on mobile screens.
+- **Dynamic Viewport Height**: Added `dvh` units to fix layout issues with mobile browser address bars.
+- **New Loaders**: 
+    - `LoaderFluid`: "Super Ultimate Fluid" with multi-drop physics and negative space text.
+    - `LoaderArchitect`: "Ultimate Architect" with responsive grid system.
+
+### Changed
+- **ClientLoader**: Removed developer switcher UI. Locked to "Fluid" loader for production.
+- **Cleanup**: Removed unused loader components (Focus, Eclipse, Scramble, Signature, Scanner).
+- **Refactor**: Optimized `Magazine.tsx` rendering logic to prevent runtime errors with conditional children.
+
+### Fixed
+- **Runtime Error**: Fixed `HTMLFlipBook` crashing when receiving `null` children.
+- **Build Error**: Restored `"use client"` directive in `ClientLoader.tsx`.
 ## [1.0.0] - 2026-01-25
 ### Added
 - **Magazine Component**: Core flipbook mechanics using `react-pageflip`.
