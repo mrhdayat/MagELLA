@@ -32,12 +32,12 @@ const Page = forwardRef<HTMLDivElement, PageProps>(({ children, number, classNam
       {/* Spine Shadow / Fold Gradient */}
       {/* If it's a right page (odd), shadow is on the LEFT edge */}
       {isRightPage && (
-        <div className="absolute top-0 left-0 w-[40px] h-full bg-gradient-to-r from-black/40 via-black/10 to-transparent z-40 pointer-events-none mix-blend-multiply" />
+        <div className="absolute top-0 left-0 w-[20px] md:w-[40px] h-full bg-gradient-to-r from-black/40 via-black/10 to-transparent z-40 pointer-events-none mix-blend-multiply" />
       )}
 
       {/* If it's a left page (even), shadow is on the RIGHT edge */}
       {!isRightPage && (
-        <div className="absolute top-0 right-0 w-[40px] h-full bg-gradient-to-l from-black/40 via-black/10 to-transparent z-40 pointer-events-none mix-blend-multiply" />
+        <div className="absolute top-0 right-0 w-[20px] md:w-[40px] h-full bg-gradient-to-l from-black/40 via-black/10 to-transparent z-40 pointer-events-none mix-blend-multiply" />
       )}
 
       {/* Subtle noise texture for paper realism (optional) */}

@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   description: "A digital luxury magazine experience.",
 };
 
+import ClientLoader from "@/components/ClientLoader";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,7 +29,9 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${inter.variable} antialiased`}
       >
-        {children}
+        <ClientLoader>
+          {children}
+        </ClientLoader>
       </body>
     </html>
   );

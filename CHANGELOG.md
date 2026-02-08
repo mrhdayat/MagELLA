@@ -10,6 +10,12 @@ All notable changes to the **MagELLA** project will be documented in this file.
 - **GSAP Integration**: Added GreenSock Animation Platform for future advanced animations (Loaders/Transitions).
 - **Project Structure**: Next.js 16 + Tailwind CSS 4 setup.
 
+- **Ultimate Professional Loader**: Finalized "The Architect" loader with:
+    -   **3D Isometric Tilt**: Perspective grid animation.
+    -   **Dynamic Measurements**: Real-time counter logic.
+    -   **Pulse Nodes**: Glowing intersection points.
+    -   **Smooth Reveal**: "Curtain Up" transition revealing pre-rendered content.
+
 ### Fixed
 - **Cover Animation**: Resolved "stiff" single-page flip issue by enforcing landscape spread mode.
 - **Back Cover**: Added transparent trailing page to ensure clean "Fin." flip animation.
